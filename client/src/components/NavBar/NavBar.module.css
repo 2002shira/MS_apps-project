@@ -1,0 +1,70 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #3b2f96;
+  color: white;
+  position: relative;
+  padding: 0 16px;
+}
+
+.menuIcon {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.bar {
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.menuDropdown {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  background-color: #554eb7;
+  padding: 0 16px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.categoryColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.categoryTitle {
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.menuItem {
+  background: transparent;
+  border: none;
+  padding: 6px 0;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.menuItem:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
